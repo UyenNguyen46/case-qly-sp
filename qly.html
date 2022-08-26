@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DANH SÁCH SẢN PHẨM</title>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        font-family: 'Space Mono', monospace;
+        font-size: 14px;
+        color: #111;
+        line-height: 1.15;
+    }
+    #wrapper{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .healine{
+        text-align: center;
+        margin: 40px 0px;
+    }
+    h3{
+        font-size: 18px;
+        color: #111;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        border: 1px solid #bebebe;
+        display: inline-block;
+        color: #555;
+        font-weight: 600;
+    }
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+    ul.products li .product-top{
+        position: relative;
+        overflow: hidden;
+    }
+    ul.products li .product-top .product-thumb{
+        display: block;
+    }
+    ul.products li:hover .product-top .product-thumb img {
+        filter: opacity(80%);
+    }
+    ul.products li .product-top .product-thumb  img{
+        display: block;
+    }
+    ul.products li .product-top a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: #446084;
+        color: #fff;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: -36px;
+        width: 100%;
+        transition: 0.25s ease-in-out;
+        opacity: 0.85;
+    }
+    ul.products li:hover a.buy-now{
+         bottom: 0px;
+    }
+    ul.products li .product-info{
+        padding: 10px 0px;
+    }
+    ul.products li.product-info a{
+    display: block;
+    text-decoration: none;
+}
+    ul.products li.products info a. product-cat{
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #9e9e9e;
+        padding: 3px 0px;
+    }
+    ul.products li.products info a. product-name{
+        color: #334862;
+        padding: 3px 0px;
+    }
+    ul.products li.products info . product-price{
+        color: #111;
+        padding: 2px 0px;
+        font-weight: 600;
+    }
+</style>
+<div id="wrapper">
+    <div class="healine">
+        <h3>SẢN PHẨM BÁN CHẠY</h3>
+    </div>
+    <ul class="products">
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/balo.jpg" alt="" style="width: 250px">
+                    </a>
+                    <a onclick="buyNow()" href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-info">
+                    <a href=""class="product-cat">Bags</a>
+                    <br>
+                    <a href="" class="product-name">balo</a>
+                    <div class="product-price">230VNĐ</div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/kinh.jpg" alt=""style="width: 250px">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-info">
+                    <a href=""class="product-cat">Bags</a>
+                    <br>
+                    <a href="" class="product-name">Kính</a>
+                    <div class="product-price">100VNĐ</div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="product-item">
+            <div class="product-top">
+                <a href="" class="product-thumb">
+                    <img src="images/mu.jpg" alt=""style="width: 250px">
+                </a>
+                <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+                <a href=""class="product-cat">Bags</a>
+                <br>
+                <a href="" class="product-name">Mũ</a>
+                <div class="product-price">150VNĐ</div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="product-item">
+            <div class="product-top">
+                <a href="" class="product-thumb">
+                    <img src="images/quan.jpg" alt=""style="width: 250px">
+                </a>
+                <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+                <a href=""class="product-cat">Bags</a>
+                <br>
+                <a href="" class="product-name">Quần Jean</a>
+                <div class="product-price">250VNĐ</div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="product-item">
+            <div class="product-top">
+                <a href="" class="product-thumb">
+                    <img src="images/tui.jpg" alt=""style="width: 250px">
+                </a>
+                <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+                <a href=""class="product-cat">Bags</a>
+                <br>
+                <a href="" class="product-name">Túi xách</a>
+                <div class="product-price">400VNĐ</div>
+            </div>
+        </div>
+    </li>
+        <li>
+        <div class="product-item">
+            <div class="product-top">
+                <a href="" class="product-thumb">
+                    <img src="images/vay.jpg" alt=""style="width: 250px">
+                </a>
+                <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+                <a href=""class="product-cat">Bags</a>
+                <br>
+                <a href="" class="product-name">Váy dạ hội</a>
+                <div class="product-price">500VNĐ</div>
+            </div>
+        </div>
+    </li>
+        <li>
+            <div class="product-item">
+                <div class="product-top">
+                    <a href="" class="product-thumb">
+                        <img src="images/gôim.jpg" alt=""style="width: 250px">
+                    </a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="product-info">
+                    <a href=""class="product-cat">Bags</a>
+                    <br>
+                    <a href="" class="product-name">Gối ôm</a>
+                    <div class="product-price">300VNĐ</div>
+                </div>
+            </div>
+        </li>
+        <li>
+        <div class="product-item">
+            <div class="product-top">
+                <a href="" class="product-thumb">
+                    <img src="images/chanvay.jpg" alt=""style="width: 250px">
+                </a>
+                <a href="" class="buy-now">Mua ngay</a>
+            </div>
+            <div class="product-info">
+                <a href=""class="product-cat">Bags</a>
+                <br>
+                <a href="" class="product-name">Chân váy</a>
+                <div class="product-price">250VNĐ</div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>
+</body>
+<script src="js.js"></script>
+
+</html>
